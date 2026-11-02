@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123b35">
+<title>أمي… أنتِ بوصلتي | دعوة تفاعلية</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap');
+:root{--deep:#123b35;--green:#1d6654;--mint:#dff0df;--gold:#e6b85c;--cream:#fff9e9;--ink:#183b35}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Tajawal',sans-serif;background:radial-gradient(circle at top,#d9edda,#f7f0dc 55%,#e5e9d5);color:var(--ink);min-height:100vh;padding:22px}
+.shell{max-width:760px;margin:auto}
+.top{text-align:center;margin:10px auto 18px}
+.kicker{display:inline-block;background:#ffffffb8;border:1px solid #d8c58e;border-radius:30px;padding:7px 16px;color:#6b572d;font-weight:700;font-size:14px}
+h1{font-size:clamp(30px,7vw,48px);margin:14px 0 5px;color:var(--deep);font-weight:900}
+.subtitle{font-size:17px;color:#53685c;margin:0}
+.book{background:linear-gradient(145deg,#17463d,#0d302d);border:5px solid #9d7439;border-radius:26px;padding:22px;box-shadow:0 18px 45px #183b3530;overflow:hidden;position:relative}
+.book:before{content:"";position:absolute;inset:10px;border:1px solid #d8b66b80;border-radius:17px;pointer-events:none}
+.map{height:185px;border-radius:17px;margin:0 0 20px;position:relative;overflow:hidden;background:linear-gradient(145deg,#244d3d,#45714e 50%,#1c5348);border:1px solid #d7b86c}
+.map:before{content:"";position:absolute;width:130%;height:130%;left:-15%;top:-15%;background:repeating-linear-gradient(35deg,transparent 0 28px,#e7c66a30 29px 31px,transparent 32px 58px);transform:rotate(-7deg)}
+.river{position:absolute;left:40%;top:-20%;height:145%;width:55px;background:#65c7c0;border:5px solid #b6e6d0;border-radius:50%;transform:rotate(20deg);box-shadow:0 0 0 5px #164b45}
+.island{position:absolute;color:#f5dc8b;font-size:30px;filter:drop-shadow(0 3px 2px #102b25)}
+.i1{top:20px;right:35px}.i2{bottom:22px;left:45px}.i3{top:78px;left:47%}
+.compass{position:absolute;right:46%;top:18px;font-size:56px;filter:drop-shadow(0 4px 3px #102b25);animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-7px) rotate(8deg)}}
+.content{background:var(--cream);border-radius:20px;padding:clamp(20px,5vw,34px);position:relative;z-index:1;min-height:300px}
+.screen{display:none;animation:appear .35s ease}.screen.active{display:block}
+@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+h2{font-size:26px;color:var(--deep);margin:0 0 12px}
+p{font-size:18px;line-height:1.9;margin:9px 0}
+.note{background:#e8f2e5;border-right:4px solid var(--green);padding:12px 15px;border-radius:12px;margin:18px 0;font-size:17px;line-height:1.8}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+button{font-family:inherit;border:0;border-radius:14px;padding:13px 20px;font-size:17px;font-weight:800;cursor:pointer;transition:.2s}
+button:hover{transform:translateY(-2px)}
+.primary{background:var(--green);color:white;box-shadow:0 5px 0 #10483b}
+.secondary{background:#f0e3c2;color:#57451f}
+.option{display:block;width:100%;text-align:right;background:#fff;border:2px solid #e4dfc9;margin:10px 0;color:#25483f}
+.option.selected{border-color:var(--green);background:#e9f4e7}
+.feedback{font-weight:700;min-height:28px;color:var(--green);margin-top:8px}
+.progress{display:flex;gap:6px;justify-content:center;margin:15px 0 0}
+.dot{height:7px;width:28px;border-radius:10px;background:#c9d4c4}.dot.on{background:var(--gold)}
+.footer{text-align:center;color:#64766b;font-size:14px;margin:18px 0}
+input{width:100%;padding:13px;border:1px solid #c9d6c7;border-radius:12px;font:inherit;font-size:17px;margin:7px 0 12px;background:white}
+.small{font-size:15px;color:#60756a}
+.final{background:#e9f3e3;border:1px dashed #8cae84;border-radius:16px;padding:18px;text-align:center}
+@media(max-width:480px){body{padding:12px}.book{padding:13px}.map{height:150px}.content{padding:20px}}
+</style>
+</head>
+<body>
+<div class="shell">
+ <header class="top">
+  <span class="kicker">دعوة تفاعلية لحصة عن بُعد</span>
+  <h1>🧭 أمي… أنتِ بوصلتي</h1>
+  <p class="subtitle">رحلة نكتشف فيها الموقع والاتجاهات معًا</p>
+ </header>
+ <main class="book">
+  <div class="map" aria-label="خريطة مغامرة">
+   <span class="island i1">🌲</span><span class="island i2">🏡</span><span class="island i3">🏝️</span>
+   <span class="compass">🧭</span><span class="island" style="left:18px;top:15px">✨</span>
+  </div>
+  <section class="content">
+   <div class="screen active" id="s0">
+    <h2>💌 رسالة تنتظركِ يا أمي</h2>
+    <p>أمي الحبيبة… هل أنتِ مستعدة لرحلة مختلفة؟</p>
+    <p>رحلة لا نبحث فيها عن الكنز فقط، بل نكتشف كيف نعرف طريقنا ونحدد مواقعنا… وتكونين فيها شريكتي في الاستكشاف!</p>
+    <div class="note">افتحي البوصلة، واستعدّي لمغامرة صغيرة تصنع أثرًا كبيرًا في تعلّم ابنتكِ.</div>
+    <div class="btnrow"><button class="primary" onclick="go(1)">افتحي الدعوة واكتشفي المفاجأة ←</button></div>
+   </div>
+   <div class="screen" id="s1">
+    <h2>🧭 محطة الاكتشاف: هل تعرفين الطريق؟</h2>
+    <p>اختاري الإجابة الصحيحة، ثم انتقلي للسؤال التالي.</p>
+    <div id="quiz"></div>
+    <div class="feedback" id="qfeedback" aria-live="polite"></div>
+    <div class="btnrow"><button class="primary" id="qnext" onclick="nextQ()" disabled>السؤال التالي</button></div>
+   </div>
+   <div class="screen" id="s2">
+    <h2>👩‍👧 محطة المشاركة: تحدّي أمي وأنا</h2>
+    <p>والآن حان وقت المغامرة المشتركة! اختاري نشاطًا واحدًا ونفّذيه مع ابنتكِ في المنزل:</p>
+    <button class="option" onclick="chooseTask(this,'ابحثا عن جهة شروق الشمس صباحًا، وحددا الشرق معًا.')">🌅 اكتشاف الشروق: ابحثا عن جهة شروق الشمس صباحًا.</button>
+    <button class="option" onclick="chooseTask(this,'اختارا غرضًا في المنزل، وصِفا موقعه باستخدام كلمة شرق أو غرب أو شمال أو جنوب.')">🏠 أين يقع؟ صِفا موقع غرض في المنزل باستخدام إحدى الجهات الأصلية.</button>
+    <button class="option" onclick="chooseTask(this,'ارسما سهمًا يوضح الشمال والجنوب والشرق والغرب، ثم سمّيا الجهات معًا.')">✏️ بوصلة من صنعكما: ارسمَا الجهات الأصلية وسمّياها.</button>
+    <div class="feedback" id="taskfeedback" aria-live="polite"></div>
+    <div class="btnrow"><button class="primary" onclick="go(3)">اكتمل التحدّي، تابعي الرحلة ←</button></div>
+   </div>
+   <div class="screen" id="s3">
+    <h2>🎯 لماذا هذه الرحلة؟</h2>
+    <p>لأن التعلّم يصبح أعمق حين نربطه بالحياة اليومية، وحين تكون الأم شريكة ابنتها في السؤال والاكتشاف والتجربة.</p>
+    <div class="note"><strong>هدفنا:</strong> أن تتعرّف الطالبة مفهوم الموقع والجهات الأصلية، وتستخدمها لتحديد مواقع الأشياء من حولها، من خلال نشاط تطبيقي ممتع بمشاركة أمها.</div>
+    <p>مشاركتكِ تمنح ابنتكِ ثقة، وتجعل المعرفة ذكرى جميلة بينكما. 💚</p>
+    <div class="btnrow"><button class="primary" onclick="go(4)">اكشفي موعد لقائنا ←</button></div>
+   </div>
+   <div class="screen" id="s4">
+    <h2>🎉 وصلنا إلى وجهتنا!</h2>
+    <div class="final">
+     <p style="font-size:25px;font-weight:900;color:#1d6654">أمي الحبيبة… بانتظاركِ!</p>
+     <p>ندعوكِ لمشاركتنا حصة «الموقع» عن بُعد، لنكتشف معًا كيف نحدد مواقعنا ونتعرّف اتجاهاتنا.</p>
+     <p><strong>موعد الرحلة:</strong> يُرسل عبر المدرسة لاحقًا.</p>
+     <p>وجودكِ يصنع فرقًا… ومشاركتكِ أجمل اتجاه. 🧭</p>
+    </div>
+    <p class="small" style="text-align:center;margin-top:16px">معلمتكنّ المحبة<br><strong>فاطمة الثبيتي</strong></p>
+    <div class="btnrow"><button class="secondary" onclick="restart()">↻ أعيدي الرحلة</button><button class="primary" onclick="window.print()">حفظ الدعوة / طباعتها</button></div>
+   </div>
+  </section>
+  <div class="progress" id="progress"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+ </main>
+ <div class="footer">رحلة تعليمية تجمع المعرفة… ودفء مشاركة الأم 💚</div>
+</div>
+<script>
+const questions=[
+ {q:"من أي جهة تشرق الشمس؟",a:["الشرق","الغرب","الشمال"],c:0,why:"أحسنتِ! تشرق الشمس من الشرق."},
+ {q:"ما الجهة المقابلة للشمال؟",a:["الشرق","الجنوب","الغرب"],c:1,why:"صحيح! الجنوب يقابل الشمال."},
+ {q:"إذا كان البيت شرق المدرسة، فأين تقع المدرسة بالنسبة إلى البيت؟",a:["شرق البيت","غرب البيت","شمال البيت"],c:1,why:"رائع! المدرسة تقع غرب البيت."}
+];
+let qi=0,answered=false,taskChosen=false;
+function go(n){document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));document.getElementById('s'+n).classList.add('active');document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('on',i<=n));}
+function renderQ(){let q=questions[qi];answered=false;document.getElementById('qfeedback').textContent='';document.getElementById('qnext').disabled=true;document.getElementById('qnext').textContent=qi===2?'انتقلي إلى تحدّي المشاركة':'السؤال التالي';document.getElementById('quiz').innerHTML='<p><strong>'+(qi+1)+'. '+q.q+'</strong></p>'+q.a.map((a,i)=>'<button class="option" onclick="answer('+i+',this)">'+a+'</button>').join('');}
+function answer(i,el){if(answered)return;answered=true;let q=questions[qi];document.querySelectorAll('#quiz .option').forEach((b,j)=>{b.disabled=true;if(j===q.c)b.classList.add('selected')});document.getElementById('qfeedback').textContent=i===q.c?q.why:'محاولة جميلة! الإجابة الصحيحة: '+q.a[q.c]+'.';document.getElementById('qnext').disabled=false;}
+function nextQ(){if(!answered)return;if(qi<2){qi++;renderQ()}else go(2)}
+function chooseTask(el,msg){document.querySelectorAll('#s2 .option').forEach(b=>b.classList.remove('selected'));el.classList.add('selected');document.getElementById('taskfeedback').textContent='اختيار رائع! '+msg;taskChosen=true;}
+function restart(){qi=0;renderQ();taskChosen=false;go(0)}
+renderQ();
+</script>
+</body></html>
